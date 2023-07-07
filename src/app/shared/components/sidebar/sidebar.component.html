@@ -1,0 +1,67 @@
+<!-- Sidebar -->
+<nav id="sidebarMenu" class=" d-lg-block sidebar collapse bg-white">
+    <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+            <a [routerLink]="['/cmp/allservice']" routerLinkActive="router-link-active"
+                class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>All Services</span>
+            </a>
+            <a [routerLink]="['/cmp/dashboard']" routerLinkActive="router-link-active"
+                class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Dashboard</span>
+            </a>
+            <ul class="sidenav-menu p-0">
+                <li class="sidenav-item">
+                    <a class="list-group-item list-group-item-action ripple py-2 d-flex align-items-center" style="
+                    border-width: 0 0 1px;" data-mdb-toggle="collapse" href="#sidenav-collapse-1-0-0" role="button"
+                        aria-expanded="true">
+                        <i class="fas fa-grin fa-fw me-3"></i>
+                        <span>Organization</span>
+                        <i class="fas fa-angle-up rotate-icon ms-auto" style="transform: rotate(180deg);"></i>
+                    </a>
+                    <ul class="sidenav-collapse collapse " id="sidenav-collapse-1-0-0">
+                        <li class="sidenav-item">
+                            <a class="sidenav-link ripple-surface py-1" [routerLink]="['/cmp/org/dept']"
+                                routerLinkActive="router-link-active">Department</a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a class="sidenav-link ripple-surface" [routerLink]="['/cmp/org/ltype']"
+                                routerLinkActive="router-link-active">Role</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidenav-item">
+                    <a class="list-group-item list-group-item-action ripple py-2 d-flex align-items-center" style="
+                    border-width: 0 0 1px;" data-mdb-toggle="collapse" href="#sidenav-collapse-2-0-0" role="button"
+                        aria-expanded="true">
+                        <i class="fas fa-grin fa-fw me-3"></i>
+                        <span>Leaves</span>
+                        <i class="fas fa-angle-up rotate-icon ms-auto" style="transform: rotate(180deg); "></i>
+                    </a>
+                    <ul class="sidenav-collapse collapse " id="sidenav-collapse-2-0-0">
+                        <li class="sidenav-item">
+                            <a class="sidenav-link ripple-surface" [routerLink]="['/cmp/org/ltype']"
+                                routerLinkActive="router-link-active">Leave Type</a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a class="sidenav-link ripple-surface" [routerLink]="['/cmp/org/ltype']"
+                                routerLinkActive="router-link-active">Public Holiday</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+                    class="fas fa-lock fa-fw me-3"></i><span>Password</span></a>
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                <i class="fas fa-chart-pie fa-fw me-3"></i><span>SEO</span>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+                    class="fas fa-chart-bar fa-fw me-3"></i><span>Orders</span></a>
+
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple logout d-flex"><i
+                    class="fas fa-chart-bar fa-fw me-3"></i><span>Logout</span></a>
+
+        </div>
+    </div>
+</nav>

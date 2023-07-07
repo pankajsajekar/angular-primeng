@@ -1,0 +1,45 @@
+.add-btn{
+    padding: 5px 10px;
+    border: 1px solid #dee2e6;
+    background: white;
+    color: #343a40;
+    font-size: 14px;
+}
+
+section{
+    width: 100%;
+}
+
+.section-header{
+    padding: 15px 15px;
+    background-color: #eef0f2;
+    h6{
+        margin: 0;
+    }
+}
+
+.breadcrumb {
+    font-size: 14px;
+    background-color: #eef0f2;
+    padding: 0px 10px 10px 15px ;
+    li a{
+        text-decoration: none;
+    }
+}
+
+.table-heading{
+    margin-top: 1rem;
+    p{
+        font-weight: 600;
+    }
+}
+
+.table-containt{
+    padding: 0 0 0 1.2rem;
+}
+
+
+
+@mixin pd-left{
+    padding-left: 1rem;
+}

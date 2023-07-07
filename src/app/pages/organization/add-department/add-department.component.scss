@@ -1,0 +1,59 @@
+.form-box .form-body{
+    display: block;
+}
+
+.form-body .fg  {
+    margin: 0 0 10px;
+    position: relative;
+    width: 100%;
+}
+
+.form-body .fg label{
+    font-size: 13px;
+    // transition: all .5s ease .1s;
+    color: #000;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-body .fg input{
+    background: transparent;
+    border: 1px solid rgba(0,0,0,.8);
+    outline: 0;
+    box-shadow: none;
+    padding: 0.5rem;
+    z-index: 9;
+    font-size: 15px;
+    height: 35px;
+    margin: 0;
+    width: 100%;
+}
+.form-body .fg input:hover, .fg input:active, .fg input:focus-within {
+    border: 1.5px solid #3b82f6;
+}
+.form-body .fgchb{
+    margin: 0 0 10px;
+}
+.form-body .fgchb label{
+    font-size: 13px;
+    margin: 0 0 8px 5px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.form-footer{
+    position: absolute;
+    bottom: 0;
+    min-width: 88%;
+}
+.fgbtn{
+    button{
+        background-color: #2bda10;
+        text-transform: capitalize;
+        color: #fff;
+        border: 0;
+        width: 100%;
+        font-size: 15px;
+        height: 40px;
+    }
+}

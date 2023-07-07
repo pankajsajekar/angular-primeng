@@ -1,0 +1,26 @@
+<div class="sidebar">
+    <form class="form-box" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-body">
+            <div class="fg">
+                <label>Department Name<code>*</code></label>
+                <input type="text" formControlName="dpt_name" name="DepartmentName">
+            </div>
+            <!-- <div class="fg">
+                <label>Department Code</label>
+                <input type="text">
+            </div>
+            <div class="fgchb">
+                    <input type="checkbox">
+                    <label>I agree</label>
+            </div> -->
+        </div>
+        <div class="form-footer">
+            <div class="fgbtn">
+                <button [disabled]="loading" type="submit">
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                    Create Department
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
