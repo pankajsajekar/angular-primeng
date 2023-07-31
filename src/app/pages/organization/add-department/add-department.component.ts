@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, Input } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -47,6 +47,8 @@ export class AddDepartmentComponent {
       this.formSubmitted.emit();
 
       this.form.reset(); 
+      
+      this.loading = false;
     }
   }
 
